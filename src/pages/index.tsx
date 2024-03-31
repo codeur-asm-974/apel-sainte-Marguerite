@@ -10,7 +10,10 @@ export default function Home() {
    <>
    <Seo title="Apel Sainte-Marguerite" description="Assocition Parent d'éléve"/>
    <h1>bonjour</h1>
-   
+   <h2>bonsoir
+
+   </h2>
+   bonsoir
    </>
   )
 }
