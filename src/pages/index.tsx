@@ -1,5 +1,6 @@
 import { Container } from "@/ui/components/container/container";
 import { Navigation } from "@/ui/components/navigation/navigation";
+import { Navigations } from "@/ui/components/navigation/navigation2";
 import { Seo } from "@/ui/components/seo/seo";
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
         title="Apel Sainte-Marguerite"
         description="Assocition Parent d'éléve"
       />
-      <Navigation />
+      <Navigations />
     </>
   );
 }

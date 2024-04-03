@@ -9,15 +9,15 @@ export const Logo = ({ size = "medium" }: props) => {
   let sizeLogo: string;
   switch (size) {
     case "small":
-      sizeLogo = "w-[100px] h-[100px]";
+      sizeLogo = "w-[120px] h-[40px]";
 
       break;
     case "medium":
-      sizeLogo = "w-[120px] h-[120px]";
+      sizeLogo = "w-[90px] h-[60px]";
 
       break;
     case "large":
-      sizeLogo = "w-[140px] h-[140px]";
+      sizeLogo = "w-[180px] h-[120px]";
 
       break;
 

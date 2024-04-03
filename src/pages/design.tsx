@@ -1,4 +1,5 @@
 import { Container } from "@/ui/components/container/container";
+import { Navigations } from "@/ui/components/navigation/navigation2";
 import { Seo } from "@/ui/components/seo/seo";
 import { Avatar } from "@/ui/design-systeme/avatar/avatar";
 import { Button } from "@/ui/design-systeme/button/button";
@@ -14,7 +15,10 @@ export default function Home() {
         description="Assocition Parent d'éléve"
       />
       <Container>
+        <Navigations />
+
         <Spinner />
+
         <div className="flex items-center gap-4 p-10">
           <Avatar
             src="/assets/images/Logo_AS_Monaco_FC_-_2021.svg.png"

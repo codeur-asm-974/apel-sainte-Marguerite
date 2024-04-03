@@ -92,7 +92,7 @@ export const Button = ({
 
   switch (size) {
     case "small":
-      sizeStyles = `text-caption3 font-medium ${
+      sizeStyles = `text-caption4  font-medium ${
         variant === "ico"
           ? " flex items-center justify-center w-[30px] h-[30px]"
           : "px-[14px] py-[10px]"
@@ -127,7 +127,7 @@ export const Button = ({
           variantStyles,
           icoSize,
           sizeStyles,
-          isLoading && "cursor-wait relative"
+          isLoading && "cursor-wait relative "
         )}
         onClick={() => console.log("click")}
         disabled={disabled}
