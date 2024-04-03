@@ -127,7 +127,8 @@ export const Button = ({
           variantStyles,
           icoSize,
           sizeStyles,
-          isLoading && "cursor-wait relative "
+          isLoading && "cursor-wait relative ",
+          "relative animate"
         )}
         onClick={() => console.log("click")}
         disabled={disabled}

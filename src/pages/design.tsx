@@ -1,5 +1,5 @@
 import { Container } from "@/ui/components/container/container";
-import { Navigations } from "@/ui/components/navigation/navigation2";
+import { Navigations } from "@/ui/components/navigation/navigations";
 import { Seo } from "@/ui/components/seo/seo";
 import { Avatar } from "@/ui/design-systeme/avatar/avatar";
 import { Button } from "@/ui/design-systeme/button/button";

@@ -5,6 +5,7 @@ import { Button } from "@/ui/design-systeme/button/button";
 import clsx from "clsx";
 import { useState } from "react";
 import Link from "next/link";
+import { ActivLink } from "./active-link";
 
 export const Navigations = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,8 +44,8 @@ export const Navigations = () => {
             component="div"
             className="max-lg:text-caption4 space-x-2.5  xl:block flex items-center xl:space-x-8 "
           >
-            <Link href="/design">contact</Link>
-            <Link href="/#">Actualité</Link>
+            <ActivLink href="/design">Contact</ActivLink>
+            <ActivLink href="/#">Actualité</ActivLink>
           </Typography>
 
           <div className="items-center gap-2 hidden sm:flex">

@@ -1,6 +1,7 @@
 import { Container } from "@/ui/components/container/container";
-import { Navigation } from "@/ui/components/navigation/navigation";
-import { Navigations } from "@/ui/components/navigation/navigation2";
+import { Footer } from "@/ui/components/navigation/footer";
+
+import { Navigations } from "@/ui/components/navigation/navigations";
 import { Seo } from "@/ui/components/seo/seo";
 
 export default function Home() {
@@ -11,6 +12,8 @@ export default function Home() {
         description="Assocition Parent d'éléve"
       />
       <Navigations />
+      <Container className="py-60">apel</Container>
+      <Footer />
     </>
   );
 }
