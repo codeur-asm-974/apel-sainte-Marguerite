@@ -1,5 +1,4 @@
 import { AppLinks } from "@/types/app-links";
-import { RiLinkedinFill, RiSlackFill, RiYoutubeFill } from "react-icons/ri";
 
 export const footerApplicationLinks: AppLinks[] = [
   {
@@ -18,9 +17,9 @@ export const footerApplicationLinks: AppLinks[] = [
     type: "internal",
   },
   {
-    label: "action",
-    baseUrl: "/#",
-    type: "internal",
+    label: "Apel Academique",
+    baseUrl: "https://www.apel.fr/",
+    type: "external",
   },
 ];
 export const footerUsersLinks: AppLinks[] = [

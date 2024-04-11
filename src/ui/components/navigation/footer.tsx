@@ -6,6 +6,8 @@ import { FooterLinks } from "@/types/app-links";
 import { v4 as uuidv4 } from "uuid";
 import { ActivLink } from "./active-link";
 import { LinkTypes } from "@/lib/link-type";
+import { Button } from "@/ui/design-systeme/button/button";
+import { RiFacebookBoxFill } from "react-icons/ri";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,29 +19,32 @@ export const Footer = () => {
     <div className="   bg-gray-700">
       <Container className="max-sm:inline max-sm:space-y-10 flex justify-between pt-16">
         <div className=" flex flex-col items-center gap-1">
-          <a href="https://www.apel.fr/" target="_blank">
-            <Image
-              src="/assets/svg/apel-academique.svg"
-              alt="Logo apel Academique"
-              width={229}
-              height={216}
-            />
-            <Typography
-              variant="caption1"
-              theme="white"
-              weight="medium"
-              className="max-sm:place-content-center"
-            >
-              Apel Academique
-            </Typography>
-          </a>
+          <Image
+            src="/assets/svg/apel-academique.svg"
+            alt="Logo apel Academique"
+            width={229}
+            height={216}
+          />
         </div>
-        <div className=" max-sm:place-content-center max-sm:-space-x-6 max-sm:ml-10 flex lg:gap-9 ">
+        <div className="max-sm:place-content-center max-sm:-space-x-6 max-sm:ml-10 flex lg:gap-9">
           {footerNavigationList}
         </div>
+
+        <div className="max-sm:absolute  max-sm:right-0 max-sm:mr-20 ">
+          <Button
+            key={uuidv4()}
+            variant="ico"
+            iconTheme="secondary"
+            icon={{ icon: RiFacebookBoxFill }}
+            baseUrl="https://www.facebook.com/profile.php?id=100064844102158"
+            linkType="external"
+            size="medium"
+          />
+        </div>
       </Container>
+
       <Container className="pt-9 pb-11 space-y-11">
-        <hr className="text-orange-600" />
+        <hr className="text-orange-600 mt-10 " />
         <div className="    flex items-center  ">
           <div className=" flex gap-8">
             <Typography className="" variant="caption4" theme="white">
@@ -52,7 +57,6 @@ export const Footer = () => {
               </a>
             </Typography>
           </div>
-          <div></div>
         </div>
       </Container>
     </div>
