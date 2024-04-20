@@ -15,7 +15,7 @@ export default function Home() {
         description="Assocition Parent d'éléve"
       />
 
-      <Layout>
+      <Layout isDisplaybreadCrumbs={false}>
         <LandingPageContainer />
       </Layout>
     </>

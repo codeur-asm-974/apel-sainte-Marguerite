@@ -1,16 +1,20 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC2iUcy_Ca03rDT3fD3G9l5Xn9XKRQyXxY",
-  authDomain: "ecole-sainte-marguerite.firebaseapp.com",
-  projectId: "ecole-sainte-marguerite",
-  storageBucket: "ecole-sainte-marguerite.appspot.com",
-  messagingSenderId: "39256083015",
-  appId: "1:39256083015:web:85f76d6794132cc9eb7f62",
-  measurementId: "G-Z46MDR5NHM"
+  apiKey: "AIzaSyBNE86Mp07TaIsztnkJGQBp_C0P8_QUKGs",
+  authDomain: "courreact.firebaseapp.com",
+  projectId: "courreact",
+  storageBucket: "courreact.appspot.com",
+  messagingSenderId: "1081231333619",
+  appId: "1:1081231333619:web:3623898fe4a1d3da8cbf86",
+  measurementId: "G-1LX0NQZ00Y",
 };
 
+export const app = initializeApp(firebaseConfig);
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+export const storage = getStorage(app);

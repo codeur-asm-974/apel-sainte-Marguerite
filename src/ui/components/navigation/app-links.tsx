@@ -35,7 +35,7 @@ export const footerUsersLinks: AppLinks[] = [
   },
   {
     label: "Mot de passe oublier",
-    baseUrl: "/connexion/mots-de-passe-perdu",
+    baseUrl: "/connexion/mot-de-passe-perdu",
     type: "external",
   },
 ];

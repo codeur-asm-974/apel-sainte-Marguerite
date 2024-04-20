@@ -15,7 +15,7 @@ export const Navigations = () => {
   };
 
   return (
-    <div className="border-b-2 border-orange-400 bg-orange-200">
+    <div className="border-b-2 bg-secondary-200 border-orange-200">
       <Container className="py-2 flex items-center justify-between gap-7">
         <Link href="/">
           <div className="lg:flex items-end gap-4">
@@ -44,13 +44,13 @@ export const Navigations = () => {
             component="div"
             className="max-lg:text-caption4 space-x-2.5  xl:block flex items-center xl:space-x-8 "
           >
-            <ActivLink href="/design">Contact</ActivLink>
-            <ActivLink href="/#">Actualité</ActivLink>
+            <ActivLink href="/#">Acceuil</ActivLink>
+            <ActivLink href="/desing">Actualité</ActivLink>
           </Typography>
 
           <div className="items-center gap-2 hidden sm:flex">
-            <Button>Rejoindre</Button>
-            <Button>Connexion</Button>
+            <Button baseUrl="/connexion/inscription">Rejoindre</Button>
+            <Button baseUrl="/connexion">Connexion</Button>
           </div>
 
           <div className="  items-center block sm:hidden ">
@@ -79,12 +79,16 @@ export const Navigations = () => {
                 )}
               </svg>
             </button>
-            <div className=" bg-orange-200 py-2  max-lg:text-caption4 xl:block  flex items-center ">
+            <div className=" py-2  max-lg:text-caption4 xl:block  flex items-center ">
               {isMenuOpen && (
                 <div className=" space-y-2 flex   flex-col">
                   {" "}
-                  <Button size="small">Rejoindre</Button>
-                  <Button size="small">Connexion</Button>
+                  <Button baseUrl="/connexion/inscription" size="small">
+                    Rejoindre
+                  </Button>
+                  <Button baseUrl="/connexion" size="small">
+                    Connexion
+                  </Button>
                 </div>
               )}
             </div>

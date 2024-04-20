@@ -5,12 +5,12 @@ import Image from "next/image";
 export const HeroTopView = () => {
   return (
     <>
-      <Container className="relative top-4  bg-primary-200  rounded">
-        <div className="w-full max-w-xl space-y-7  py-6">
+      <Container className=" flex max-lg:place-content-center  relative top-4  bg-primary-200 p-6 rounded">
+        <div className="  w-full   sm:max-w-xl max-sm:space-y-1  max-w-xl space-y-7  ">
           <Typography
             variant="h1"
             component="h1"
-            className=" mx-w-xl  max-sm:text-lg max-sm:font-bold max-sm:text-center"
+            className="  max-sm:text-lg  sm:font-bold max-sm:font-bold max-sm:text-center text-center mx-w-xl"
           >
             Votre école Sainte-Marguerite
           </Typography>
@@ -19,7 +19,7 @@ export const HeroTopView = () => {
             alt="illustration ecole Sainte-Marguerite"
             width={650}
             height={434}
-            className="absolute  right-0 p-4 -top-4 z-0 max-sm:relative "
+            className="max-sm:relative  max-sm:top-2 lg:absolute  right-0 p-6 -top-4 z-0  "
           />
 
           <Typography
@@ -40,45 +40,39 @@ export const HeroTopView = () => {
           </Typography>
         </div>
       </Container>
-      <Container className="relative  mt-16 top-4 py-50 mb-8  bg-primary-200 rounded">
-        <div className="relative ">
-          <div className="w-full ">
-            <Typography
-              variant="h1"
-              component="h1"
-              className=" mx-w-xl mt-6 flex-col absolute  inset-y-0 right-60 max-sm:mx-w-xl  max-sm:text-lg  max-sm:font-bold max-sm:inset-y-0 max-sm:right-40  "
-            >
-              Votre APEL
-            </Typography>
-          </div>
+      <Container className="  flex lg:flex-row-reverse mt-10 max-lg:place-content-center relative top-4 p-6 bg-primary-200  rounded">
+        <div className="    w-full  sm:max-w-xl lg:max-w-xl space-y-7   ">
+          <Typography
+            variant="h1"
+            component="h1"
+            className=" max-sm:text-lg  sm:font-bold max-sm:font-bold max-sm:text-center text-center mx-w-xl "
+          >
+            Votre APEL
+          </Typography>
 
-          <div className=" left-0 py-1 z-0  ">
-            <Image
-              src="/assets/images/apel.jpeg"
-              alt="illustration logo APEL"
-              width={550}
-              height={334}
-              className="mt-8 py-4 max-sm:mt-12"
-            />
-          </div>
-          <div className="w-full max-w-xl  flex-col absolute mt-16 inset-y-0 right-0 max-sm:relative max-sm:mt-2">
-            <Typography
-              variant="body-lg"
-              component="p"
-              theme="gray"
-              className="m-w-xl   mt-14 text-justify max-sm:py-4 max-sm:mt-2 "
-            >
-              L’A.P.E.L. (Association de Parents d’élèves de l’Enseignement
-              Libre) est une association “type Loi de 1901”, composée de parents
-              d’élèves élus. Le groupe a des temps de réunions en commun avec
-              l’O.G.E.C. Les deux associations travaillent ensemble, œuvrent
-              pour le bien commun de l’établissement. Tous les parents sont
-              membres de l’association. Les parents volontaires peuvent se
-              présenter au conseil pour être élus lors de l’assemblée générale
-              annuelle et participer à l’organisation des événements dans
-              l’école.
-            </Typography>
-          </div>
+          <Image
+            src="/assets/images/apel.jpeg"
+            alt="illustration logo APEL"
+            width={550}
+            height={334}
+            className="max-sm:relative max-sm:left-0 lg:absolute left-6 top-3  z-0   "
+          />
+
+          <Typography
+            variant="body-lg"
+            component="p"
+            theme="gray"
+            className="m-w-xl text-justify "
+          >
+            L’A.P.E.L. (Association de Parents d’élèves de l’Enseignement Libre)
+            est une association “type Loi de 1901”, composée de parents d’élèves
+            élus. Le groupe a des temps de réunions en commun avec l’O.G.E.C.
+            Les deux associations travaillent ensemble, œuvrent pour le bien
+            commun de l’établissement. Tous les parents sont membres de
+            l’association. Les parents volontaires peuvent se présenter au
+            conseil pour être élus lors de l’assemblée générale annuelle et
+            participer à l’organisation des événements dans l’école.
+          </Typography>
         </div>
       </Container>
     </>
